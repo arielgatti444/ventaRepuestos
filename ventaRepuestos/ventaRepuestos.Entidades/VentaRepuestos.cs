@@ -61,7 +61,14 @@ namespace ventaRepuestos.Entidades
 
         public void QuitarStock(int codigo, int cantidad)
         {
-
+            foreach (Repuesto r in _listaProductos)
+            {
+                if (r.Codigo == codigo)
+                {
+                    r.Stock = r.Stock - cantidad;
+                    break;
+                }
+            }
         }
 
         public List<Repuesto> TraerPorCategoria(int codigoCat)
