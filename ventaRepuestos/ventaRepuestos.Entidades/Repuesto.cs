@@ -17,7 +17,7 @@ namespace ventaRepuestos.Entidades
         public int Codigo { get => _codigo; }
         public string Nombre { get => _nombre; }
         public double Precio { get => _precio; set => _precio = value;}
-        public int Stock { get => _stock; }
+        public int Stock { get => _stock; set => _stock = value; }
         public Categoria Categoria { get => _categoria; }
 
 
